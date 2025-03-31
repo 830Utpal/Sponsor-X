@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://static.vecteezy.com/system/resources/previews/012/389/883/original/blue-and-white-abstract-background-futuristic-gaming-concept-illustration-design-free-vector.jpg') no-repeat center center/cover;
+        }
+        header {
+            position: relative;
+            
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(236, 24, 34, 0.5);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="header-content">
+           <h1 style="color:purple">Welcome to Our Slider Showcase</h1>
+           <p>Explore a visually captivating experience with our dynamic image sliders.</p>
+       </div>
+    </header>
+    <main>
+        <div class="slider" style="--width: 100px; --height: 50px; --quantity: 10;">
+            <div class="list" ">
+                <div class="item" style="--position: 1"><img src="images/slider1_1.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/slider1_2.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/slider1_3.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/slider1_4.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/slider1_5.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/slider1_6.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/slider1_7.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/slider1_8.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/slider1_9.png" alt=""></div>
+                <div class="item" style="--position: 10"><img src="images/slider1_10.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="slider" reverse="true" style="--width: 200px; --height: 200px; --quantity: 9;">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="images/slider2_1.png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="images/slider2_2.png" alt=""></div>
+                <div class="item" style="--position: 3"><img src="images/slider2_3.png" alt=""></div>
+                <div class="item" style="--position: 4"><img src="images/slider2_4.png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="images/slider2_5.png" alt=""></div>
+                <div class="item" style="--position: 6"><img src="images/slider2_6.png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="images/slider2_7.png" alt=""></div>
+                <div class="item" style="--position: 8"><img src="images/slider2_8.png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="images/slider2_9.png" alt=""></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
